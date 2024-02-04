@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Rrewusz
@@ -18,6 +19,9 @@ namespace Rrewusz
             _hp= HP;
             _mana= Mana;
         }
+        private int GetMana() { return _mana; }
+        private void SetMana(int ManaCost) { _mana -= ManaCost; }
+        private void AddMana() { _mana++; }
         public int GetHP() { return _hp; }
         public void SetHP(int newHP)
         {
@@ -25,10 +29,19 @@ namespace Rrewusz
         }
         public void Attack(Enemy enemy)
         {
-            int Attack = rnd.Next(1,2);
-            int EnemyHP = enemy.GetHP();
-            EnemyHP -= Attack;
-            enemy.SetHP(EnemyHP);
+            if(_mana >= 2)
+            {
+                int Attack = rnd.Next(1, 2);
+                int EnemyHP = enemy.GetHP();
+                EnemyHP -= Attack;
+                enemy.SetHP(EnemyHP);
+                SetMana(2);
+                AddMana();
+            }
+            else
+            {
+
+            }
         }
         public void Block()
         {

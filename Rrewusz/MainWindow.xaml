@@ -8,10 +8,11 @@
         Title="MainWindow" Height="475" Width="800">
     <Grid Background="#080808">
         <WrapPanel Margin="0,370,0,0">
-            <Button x:Name="AttackBTN" BorderThickness="3" Margin="50,12,0,0" Background="Black" Foreground="Orange" Height="40" Width="130" Content="Attack" BorderBrush="Orange" FontSize="17" Click="AttackBTN_Click"/>
-            <Button x:Name="BlockBTN" BorderThickness="3" Margin="50,12,0,0" Background="Black" Foreground="Orange" Height="40" Width="130" Content="Block" BorderBrush="Orange" FontSize="17"/>
-            <Button x:Name="HealBTN" BorderThickness="3" Margin="50,12,0,0" Background="Black" Foreground="Orange" Height="40" Width="130" Content="Heal" BorderBrush="Orange" FontSize="17"/>
-            <Button x:Name="SkipkBTN" BorderThickness="3" Margin="50,12,0,0" Background="Black" Foreground="Orange" Height="40" Width="130" Content="Skip" BorderBrush="Orange" FontSize="17"/>
+            <Button x:Name="AttackBTN" FontFamily="Comic Sans MS" BorderThickness="3" Margin="50,12,0,0" Background="Black" Foreground="Orange" Height="40" Width="130" Content="Attack" BorderBrush="Orange" FontSize="17" Click="AttackBTN_Click"/>
+            <Button x:Name="BlockBTN" FontFamily="Comic Sans MS" BorderThickness="3" Margin="50,12,0,0" Background="Black" Foreground="Orange" Height="40" Width="130" Content="Block" BorderBrush="Orange" FontSize="17"/>
+            <Button x:Name="HealBTN" FontFamily="Comic Sans MS" BorderThickness="3" Margin="50,12,0,0" Background="Black" Foreground="Orange" Height="40" Width="130" Content="Heal" BorderBrush="Orange" FontSize="17"/>
+            <Button x:Name="SkipkBTN" FontFamily="Comic Sans MS" BorderThickness="3" Margin="50,12,0,0" Background="Black" Foreground="Orange" Height="40" Width="130" Content="Skip" BorderBrush="Orange" FontSize="17"/>
         </WrapPanel>
+        <Label Name="Writer" Opacity="0" Content="Hellow world" Foreground="White" Height="75" Width="440" BorderBrush="White" BorderThickness="1" Margin="180,275,180,109" FontSize="16" FontFamily="Comic Sans MS"/>
     </Grid>
 </Window>
